@@ -1,7 +1,4 @@
-hostname = %APPEND% *.amemv.com
+hostname = api.bilibili.com
 
-[URL Rewrite]
-^https?:\/\/(.*)\.amemv\.com\/aweme\/v2\/(follow\/)?feed\/ https://$1.amemv.com/aweme/v1/$2feed/ header
-
-[Script]
-douyin_ad = type=http-response,pattern=^https?:\/\/.*\.amemv\.com\/aweme\/v1\/(feed|mix\/aweme|aweme\/post|(multi\/)?aweme\/detail|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/,requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/douyin.js
+https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.jucatyo.com/playurl
+https:\/\/api.bilibili.com\/pgc\/view\/app\/season url 302 http://api.jucatyo.com/season
