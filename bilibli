@@ -1,4 +1,4 @@
-hostname = api.bilibili.com
+hostname = %APPEND% *.amemv.com
 
 [URL Rewrite]
 ^https?:\/\/(.*)\.amemv\.com\/aweme\/v2\/(follow\/)?feed\/ https://$1.amemv.com/aweme/v1/$2feed/ header
