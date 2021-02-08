@@ -1,5 +1,8 @@
 hostname = *.googlevideo.com, www.bilibili.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, api.m.jd.com, trade-acs.m.taobao.com, *.snssdk.com, api.mvmtv.com, app.api.versa-ai.com, claritywallpaper.com, *.rr.tv, api.rr.tv, www.luqijianggushi.com
 
+# Box
+^https?://boxjs.net url script-analyze-echo-response https://gitee.com/chavyleung/scripts/raw/master/box/chavy.boxjs.js
+
 # 哔哩哔哩番剧开启1080P+
 ^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bilifj.js
 
