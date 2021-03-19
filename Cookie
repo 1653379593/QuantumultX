@@ -46,4 +46,4 @@ https:\/\/ios\.baertt\.com\/v5\/\w+\/withdraw\d?\.json url script-request-body h
 #  > QQ会员
 https:\/\/proxy.vac.qq.com\/cgi-bin\/srfentry.fcgi? url script-request-header https://raw.githubusercontent.com/lowking/Scripts/master/QQVip/qqVipCheckIn.js
 
-hostname =  api.m.jd.com, iface?.iqiyi.com, nebula.kuaishou.com, *.bilibili.com, *.rr.tv, *.rrys2019.com, ios.zmzapi.com, music.163.com, c.tieba.baidu.com, www.52pojie.cn, zt.wps.cn, api.inews.qq.com, proxy.vac.qq.com, kd.youth.cn, ios.baertt.com
+hostname =  api.m.jd.com, iface?.iqiyi.com, nebula.kuaishou.com, *.bilibili.com, *.rr.tv, *.rrys2019.com, ios.zmzapi.com, music.163.com, c.tieba.baidu.com, www.52pojie.cn, zt.wps.cn, api.inews.qq.com, api.prize.qq.com, kd.youth.cn, ios.baertt.com, proxy.vac.qq.com
