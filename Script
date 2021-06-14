@@ -1,7 +1,17 @@
-hostname = *.googlevideo.com, www.bilibili.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, api.m.jd.com, trade-acs.m.taobao.com, *.snssdk.com, api.mvmtv.com, app.api.versa-ai.com, claritywallpaper.com, *.rr.tv, api.rr.tv, www.luqijianggushi.com
+hostname = *.googlevideo.com, www.bilibili.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, ap?.bilibili.com, api.m.jd.com, trade-acs.m.taobao.com, *.snssdk.com, api.mvmtv.com, app.api.versa-ai.com, claritywallpaper.com, *.rr.tv, api.rr.tv, www.luqijianggushi.com
 
 # > BoxJs
 ^https?://boxjs.net url script-analyze-echo-response https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js
+
+# > 哔哩哔哩港澳台切换
+
+^https:\/\/ap(p|i)\.bilibili\.com\/(pgc\/view\/(v\d\/)?app|x(\/v\d)?\/view\/video)\/(season|online)\?access_key url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
+
+#可选, 适用于搜索指定地区的番剧
+^https:\/\/app\.bilibili\.com\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)& url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
+
+# > 捷径策略切换
+^http:\/\/nobyda\.policy url script-analyze-echo-response https://raw.githubusercontent.com/NobyDa/Script/master/Shortcuts/PolicySwitch.js
 
 # 哔哩哔哩番剧开启1080P+
 ^https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/bilifj.js
